@@ -7,18 +7,31 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import PricingSection from "./components/PricingSection";
 import Footer from "./components/Footer";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MenuSection from "./components/MenuSection";
+
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <HeroSection />
-      <FeaturedSection />
-      <HowSection />
-      <MealSection />
-      <TestimonialsSection />
-      <PricingSection />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <FeaturedSection />
+              <HowSection />
+              <MealSection />
+              <TestimonialsSection />
+              <PricingSection />
+            </>
+          }
+        />
+        <Route path="/meals" element={<MenuSection />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

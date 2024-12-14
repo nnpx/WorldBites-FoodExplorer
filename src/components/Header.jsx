@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import omnifoodLogo from "../img/omnifoodLogo.png";
+import Button from "./UI/Button";
+
+import { useDispatch, useSelector } from "react-redux";
+import { showCart } from "../store/userProgressSlice";
 
 export default function Header() {
   const toggleNav = () => {
@@ -8,30 +14,62 @@ export default function Header() {
     headerEl.classList.toggle("nav-open");
   };
 
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
+  const dispatch = useDispatch();
+  const cartState = useSelector((state) => state.cart);
+  const totalCartItems = cartState.items.reduce((totalNumberOfItems, item) => {
+    // initail value of totalNumberOfItems is 0
+    return totalNumberOfItems + item.quantity;
+  }, 0);
+
+  function handleShowCart() {
+    dispatch(showCart());
+  }
+
   return (
     <header className="header">
-      {/* <Link to="/"> */}
-      <img className="logo" alt="Omnifood logo" src={omnifoodLogo} />
-      {/* </Link> */}
+      {console.log(totalCartItems)}
+
+      <Link to="/">
+        <img className="logo" alt="Omnifood logo" src={omnifoodLogo} />
+      </Link>
 
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
-            <a href="#how">How it works</a>
+            <HashLink smooth to="/#how">
+              How it works
+            </HashLink>
           </li>
           <li>
-            <a href="#meals">Meals</a>
+            <HashLink smooth to="/meals">
+              Menu
+            </HashLink>
           </li>
           <li>
-            <a href="#testimonials">Testimonials</a>
+            <HashLink smooth to="/#testimonials">
+              Testimonials
+            </HashLink>
           </li>
           <li>
-            <a href="#pricing">Pricing</a>
+            <HashLink smooth to="/#pricing">
+              Pricing
+            </HashLink>
           </li>
           <li>
-            <a href="#cta" className="nav-cta">
-              Try for free
-            </a>
+            {/* <a href="#cta" className="nav-cta"> */}
+            {isHomePage ? (
+              <Link to="#cta" className="main-nav-list nav-cta">
+                Try for free
+              </Link>
+            ) : (
+              <Button className="cart" onClick={handleShowCart}>
+                Your Cart ({totalCartItems})
+              </Button>
+            )}
+            {/* </a> */}
           </li>
         </ul>
       </nav>

@@ -45,16 +45,16 @@
   color: #cf711f;
 }
 
-.main-nav-list.nav-cta a:link,
-.main-nav-list.nav-cta a:visited {
+.main-nav-list.nav-cta:link,
+.main-nav-list.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
 }
 
-.main-nav-list.nav-cta a:hover,
-.main-nav-list.nav-cta a:active {
+.main-nav-list.nav-cta:hover,
+.main-nav-list.nav-cta:active {
   background-color: #cf711f;
 }
 
@@ -667,4 +667,341 @@
 .footer-link:hover,
 .footer-link:active {
   color: #555;
+}
+
+/* ********************************/
+/* MENU PAGE */
+/* ********************************/
+
+.section-menu {
+  background-color: #fdf2e9;
+}
+
+#menus {
+  width: 90%;
+  max-width: 100rem;
+  list-style: none;
+  margin: auto;
+  padding: 2rem 1rem 5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+  color: #333;
+
+  font-size: 1.7rem;
+}
+
+.meal-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+
+  /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3); */
+  /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden; */
+  /* transition: all 0.4s; */
+}
+
+.meal-item article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.meal-item img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.meal-item h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 0.75rem 1rem;
+}
+
+.meal-item-description {
+  margin: 1rem 2rem;
+}
+
+.meal-item-price {
+  display: inline-block;
+  background-color: #fdefe4;
+  color: #cf711f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 01rem 2rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+.meal-item-actions {
+  margin-bottom: 1.5rem;
+}
+
+.cart h2 {
+  margin: 1rem 0;
+}
+
+.cart ul {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.modal-actions .text-button {
+  color: #fff;
+}
+
+.modal-actions .text-button:hover,
+.modal-actions .text-button:active {
+  color: #fff;
+}
+
+.modal-actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+}
+
+.modal-actions button:hover,
+.modal-actions button:active {
+  background-color: #cf711f;
+  border-color: #cf711f;
+  color: #fff;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #46443c;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.7rem 0;
+}
+
+.cart-item p {
+  margin: 0rem;
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cart-item-actions button {
+  cursor: pointer;
+  font-size: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #1d1a16;
+  color: #eb984e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.cart-item-actions button:hover,
+.cart-item-actions button:active {
+  background-color: #1d1a16;
+  color: #cf711f;
+}
+
+.control {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.control input {
+  width: 100%;
+  max-width: 20rem;
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.control-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.checkout-amount {
+  margin: 1rem 0rem 2rem 0rem;
+  font-size: 1.6rem;
+}
+
+.checkout-success {
+  margin-bottom: 1rem;
+}
+
+.checkout-success-header {
+  margin-bottom: 1.7rem;
+}
+
+.button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fdf2e9;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background-color: #cf711f;
+  border-color: #cf711f;
+}
+
+.cart {
+  padding: 0.7rem 1.6rem;
+  font-size: 1.8rem;
+  border-color: #cf711f;
+  border-width: 0.4rem;
+}
+
+.text-button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #e67e22;
+}
+
+.text-button:hover,
+.text-button:active {
+  color: #cf711f;
+}
+
+.modal {
+  background-color: #e4ddd4;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  width: 80%;
+  max-width: 50%;
+  animation: fade-slide-up 0.3s ease-out forwards;
+  font-size: 1.5rem;
+  padding: 2rem;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.error {
+  width: 90%;
+  max-width: 25rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f9b8b8;
+  color: #6d0b0b;
+  border-radius: 6px;
+}
+
+.error h2 {
+  margin: 0;
+}
+
+.error p {
+  margin: 0;
+}
+
+.meal-filters {
+  padding: 2rem 0rem 0.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.meal-filters button {
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #e67e22;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: 7px;
+  border: none;
+
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(246, 152, 52, 0.2);
+}
+
+.meal-filters button:hover,
+.meal-filters button:active {
+  background-color: #f8d8bd;
+  transition: all 0.3s;
+}
+
+.meal-filters button.active {
+  background-color: #eb984e;
+  color: #fff;
 }
