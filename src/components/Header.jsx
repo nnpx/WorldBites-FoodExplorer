@@ -30,8 +30,6 @@ export default function Header() {
 
   return (
     <header className="header">
-      {console.log(totalCartItems)}
-
       <Link to="/">
         <img className="logo" alt="Omnifood logo" src={omnifoodLogo} />
       </Link>

@@ -6,6 +6,7 @@ import MealSection from "./components/MealSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import PricingSection from "./components/PricingSection";
 import Footer from "./components/Footer";
+import StickyHeader from "./components/stickyHeader";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MenuSection from "./components/MenuSection";
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <Header />
+      {/* <StickyHeader /> */}
       <Routes>
         <Route
           path="/"

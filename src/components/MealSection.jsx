@@ -1,6 +1,7 @@
 import meal1 from "../img/meals/meal-1.jpg";
 import meal2 from "../img/meals/meal-4.png";
 import "ionicons";
+import { HashLink } from "react-router-hash-link";
 
 export default function MealSection() {
   return (
@@ -147,9 +148,9 @@ export default function MealSection() {
       </div>
 
       <div className="container all-recipes">
-        <a href="#" className="link">
+        <HashLink smooth to="/meals" className="link">
           See all menus &rarr;
-        </a>
+        </HashLink>
       </div>
     </section>
   );

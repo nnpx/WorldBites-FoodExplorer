@@ -14,8 +14,8 @@ function App() {
 
   return (
     <section className="section-menu">
-      {console.log(cartState)}
-      {console.log(userProgress)}
+      {/* {console.log(cartState)}
+      {console.log(userProgress)} */}
 
       {/* <Header /> */}
       <Meals />
