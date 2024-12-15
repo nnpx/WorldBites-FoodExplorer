@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <Link to="/meals">
+      <Link to="/">
         <img className="logo" alt="Omnifood logo" src={omnifoodLogo} />
       </Link>
 
@@ -59,7 +59,7 @@ export default function Header() {
           <li>
             {/* <a href="#cta" className="nav-cta"> */}
             {isHomePage ? (
-              <Link to="#cta" className="main-nav-list nav-cta">
+              <Link to="/meals" className="main-nav-list nav-cta">
                 Try for free
               </Link>
             ) : (
