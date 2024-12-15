@@ -65,7 +65,6 @@ export default function Meals() {
           <MealItem key={meal.id} id={meal.id} meal={meal} />
         ))}
       </ul>
-      {console.log(filteredMeals)}
     </>
   );
 }
