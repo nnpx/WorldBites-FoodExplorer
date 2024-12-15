@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 export default function PricingSection() {
   return (
     <section className="section-pricing" id="pricing">
@@ -46,9 +48,13 @@ export default function PricingSection() {
             </li>
           </ul>
           <div className="plan-sign-up">
-            <a href="#" className="btn btn--full margin-right-sm">
+            <HashLink
+              smooth
+              to="/meals"
+              className="btn btn--full margin-right-sm"
+            >
               Order now
-            </a>
+            </HashLink>
           </div>
         </div>
 
@@ -58,7 +64,9 @@ export default function PricingSection() {
             <p className="plan-price">
               <span>$</span>259
             </p>
-            <p className="plan-text">per month. That's just $8 per meal!</p>
+            <p className="plan-text">
+              <strong>per month</strong>. That's just $8 per meal!
+            </p>
           </header>
 
           <ul className="list">
@@ -96,9 +104,13 @@ export default function PricingSection() {
             </li>
           </ul>
           <div className="plan-sign-up">
-            <a href="#" className="btn btn--full margin-right-sm">
+            <HashLink
+              smooth
+              to="/meals"
+              className="btn btn--full margin-right-sm"
+            >
               Order now
-            </a>
+            </HashLink>
           </div>
         </div>
       </div>

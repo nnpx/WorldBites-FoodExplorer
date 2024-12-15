@@ -33,8 +33,8 @@ export default function TestimonialsSection() {
               alt="Photo of customer Dave Bryson"
             />
             <blockquote className="testimonial-text">
-              Inexpensive, healthy and great-tasting meals, without even having
-              to order manually! It feels truly magical.
+              Affordable, healthy, and delicious meals from around the globe—all
+              delivered effortlessly to my door!
             </blockquote>
             <p className="testimonial-name">&mdash; Dave Bryson</p>
           </figure>
@@ -46,8 +46,9 @@ export default function TestimonialsSection() {
               alt="Photo of customer Ben Hadley"
             />
             <blockquote className="testimonial-text">
-              The AI algorithm is crazy good, it chooses the right meals for me
-              every time. It's amazing not to worry about food anymore!
+              It’s like having a personal chef who knows exactly what I love.
+              Whether I’m craving Italian pasta or spicy Indian curries, it
+              always gets it right.
             </blockquote>
             <p className="testimonial-name">&mdash; Ben Hadley</p>
           </figure>
@@ -59,8 +60,8 @@ export default function TestimonialsSection() {
               alt="Photo of customer Steve MillerDave Bryson"
             />
             <blockquote className="testimonial-text">
-              Omnifood is a life saver! I just started a company, so there's no
-              time for cooking. I couldn't live without my daily meals now!
+              This is a game-changer! As a busy entrepreneur, having
+              chef-prepared meals every day has been a lifesaver.
             </blockquote>
             <p className="testimonial-name">&mdash; Steve Miller</p>
           </figure>
@@ -72,8 +73,8 @@ export default function TestimonialsSection() {
               alt="Photo of customer Hannah Smith"
             />
             <blockquote className="testimonial-text">
-              I got Omnifood for the whole family, and it frees up so much time!
-              Plus, everything is organic and vegan and without plastic.
+              I subscribed for the whole family. From hearty Mexican tacos to
+              fresh sushi platters, there’s something for everyone.
             </blockquote>
             <p className="testimonial-name">&mdash; Hannah Smith</p>
           </figure>

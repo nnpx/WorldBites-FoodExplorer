@@ -6,6 +6,8 @@ import customerImg5 from "../img/customers/customer-5.jpg";
 import customerImg6 from "../img/customers/customer-6.jpg";
 import heroImg from "../img/heroImg.png";
 
+import { HashLink } from "react-router-hash-link";
+
 export default function HeroSection() {
   return (
     <section className="section-hero">
@@ -23,12 +25,16 @@ export default function HeroSection() {
             your door. Perfectly crafted to suit your taste and dietary
             preferences, every meal brings a new story to your table.
           </p>
-          <a href="#cta" className="btn btn--full margin-right-sm">
+          <HashLink
+            smooth
+            to="/meals"
+            className="btn btn--full margin-right-sm"
+          >
             Order Now
-          </a>
-          <a href="#how" className="btn btn--outline">
+          </HashLink>
+          <HashLink smooth to="/#how" className="btn btn--outline">
             Learn more &darr;
-          </a>
+          </HashLink>
 
           <div className="delivered-meals">
             <div className="delivered-imgs">

@@ -12,13 +12,14 @@ export default function MealItem({ meal }) {
 
   return (
     <li className="meal-item">
-      <article>
+      <article className="meal-item-article">
         <img
           src={`${import.meta.env.VITE_BACKEND_URL}/${meal.image}`}
           alt={meal.name}
+          className="meal-item-img"
         />
         <div>
-          <h3>{meal.name}</h3>
+          <h3 className="meal-item-name">{meal.name}</h3>
           <p className="meal-item-price">
             {currencyFormatter.format(meal.price)}
           </p>
