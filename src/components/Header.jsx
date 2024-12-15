@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <Link to="/">
+      <Link to="/meals">
         <img className="logo" alt="Omnifood logo" src={omnifoodLogo} />
       </Link>
 
