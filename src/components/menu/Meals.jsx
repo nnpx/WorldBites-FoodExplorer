@@ -14,14 +14,14 @@ export default function Meals() {
     // } = useHttp("http://localhost:3000/meals", {}, []);
   } = useHttp(`${import.meta.env.VITE_BACKEND_URL}/meals`, requestConfig, []);
 
-  // State to store the selected filter
-  const [filter, setFilter] = useState("all");
+  // // State to store the selected filter
+  // const [filter, setFilter] = useState("all");
 
-  // Filter meals based on the selected type
-  const filteredMeals =
-    filter === "all"
-      ? loadedMeals
-      : loadedMeals.filter((meal) => meal.type === filter);
+  // // Filter meals based on the selected type
+  // const filteredMeals =
+  //   filter === "all"
+  //     ? loadedMeals
+  //     : loadedMeals.filter((meal) => meal.type === filter);
 
   if (isLoading) {
     return <p className="center">Fetching meals...</p>;
@@ -39,7 +39,7 @@ export default function Meals() {
 
   return (
     <>
-      {console.log(import.meta.env.VITE_BACKEND_URL)}
+      {/* {console.log(import.meta.env.VITE_BACKEND_URL)}
 
       {console.log(`Meals.jsx loadedMeals: ${loadedMeals}`)}
       {console.log(`Meals.jsx error:`)}
@@ -70,7 +70,7 @@ export default function Meals() {
         >
           Dessert
         </button>
-      </div>
+      </div> */}
 
       <ul id="menus">
         {filteredMeals.map((meal) => (
