@@ -73,7 +73,7 @@ export default function Meals() {
       </div> */}
 
       <ul id="menus">
-        {filteredMeals.map((meal) => (
+        {loadedMeals.map((meal) => (
           <MealItem key={meal.id} id={meal.id} meal={meal} />
         ))}
       </ul>
