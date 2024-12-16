@@ -39,6 +39,8 @@ export default function Meals() {
 
   return (
     <>
+      {console.log(import.meta.env.VITE_BACKEND_URL)}
+
       {console.log(`Meals.jsx loadedMeals: ${loadedMeals}`)}
       {console.log(`Meals.jsx error:`)}
       {console.log(error)}
