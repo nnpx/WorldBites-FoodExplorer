@@ -148,7 +148,7 @@ export default function MealSection() {
       </div>
 
       <div className="container all-recipes">
-        <HashLink smooth to="/meals" className="link">
+        <HashLink smooth to="/menu" className="link">
           See all menus &rarr;
         </HashLink>
       </div>

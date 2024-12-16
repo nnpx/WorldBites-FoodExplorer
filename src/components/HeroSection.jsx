@@ -25,11 +25,7 @@ export default function HeroSection() {
             your door. Perfectly crafted to suit your taste and dietary
             preferences, every meal brings a new story to your table.
           </p>
-          <HashLink
-            smooth
-            to="/meals"
-            className="btn btn--full margin-right-sm"
-          >
+          <HashLink smooth to="/menu" className="btn btn--full margin-right-sm">
             Order Now
           </HashLink>
           <HashLink smooth to="/#how" className="btn btn--outline">

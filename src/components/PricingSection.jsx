@@ -50,7 +50,7 @@ export default function PricingSection() {
           <div className="plan-sign-up">
             <HashLink
               smooth
-              to="/meals"
+              to="/menu"
               className="btn btn--full margin-right-sm"
             >
               Order now
@@ -106,7 +106,7 @@ export default function PricingSection() {
           <div className="plan-sign-up">
             <HashLink
               smooth
-              to="/meals"
+              to="/menu"
               className="btn btn--full margin-right-sm"
             >
               Order now

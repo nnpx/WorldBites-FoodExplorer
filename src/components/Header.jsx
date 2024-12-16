@@ -42,7 +42,7 @@ export default function Header() {
             </HashLink>
           </li>
           <li>
-            <HashLink smooth to="/meals">
+            <HashLink smooth to="/menu">
               Menu
             </HashLink>
           </li>
@@ -59,7 +59,7 @@ export default function Header() {
           <li>
             {/* <a href="#cta" className="nav-cta"> */}
             {isHomePage ? (
-              <Link to="/meals" className="main-nav-list nav-cta">
+              <Link to="/menu" className="main-nav-list nav-cta">
                 Try for free
               </Link>
             ) : (
