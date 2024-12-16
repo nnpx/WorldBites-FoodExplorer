@@ -14,15 +14,15 @@ import MenuSection from "./components/MenuSection";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <HeroSection />
       <FeaturedSection />
       <HowSection />
       <MealSection />
       <TestimonialsSection />
-      <PricingSection />
+      <PricingSection /> */}
       <MenuSection />
-      <Footer />
+      {/* <Footer /> */}
     </>
     // <Router>
     //   <Header />
