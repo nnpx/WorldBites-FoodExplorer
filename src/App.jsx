@@ -13,28 +13,39 @@ import MenuSection from "./components/MenuSection";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
-      {/* <StickyHeader /> */}
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <HeroSection />
-              <FeaturedSection />
-              <HowSection />
-              <MealSection />
-              <TestimonialsSection />
-              <PricingSection />
-              <MenuSection />
-            </>
-          }
-        />
-        <Route path="/menu" element={<MenuSection />} />
-      </Routes>
+      <HeroSection />
+      <FeaturedSection />
+      <HowSection />
+      <MealSection />
+      <TestimonialsSection />
+      <PricingSection />
+      <MenuSection />
       <Footer />
-    </Router>
+    </>
+    // <Router>
+    //   <Header />
+    //   {/* <StickyHeader /> */}
+    //   <Routes>
+    //     <Route
+    //       path="/"
+    //       element={
+    //         <>
+    //           <HeroSection />
+    //           <FeaturedSection />
+    //           <HowSection />
+    //           <MealSection />
+    //           <TestimonialsSection />
+    //           <PricingSection />
+    //           <MenuSection />
+    //         </>
+    //       }
+    //     />
+    //     <Route path="/menu" element={<MenuSection />} />
+    //   </Routes>
+    //   <Footer />
+    // </Router>
   );
 }
 
