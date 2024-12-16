@@ -28,11 +28,20 @@ export default function Meals() {
   }
 
   if (error) {
-    return <Error title="Failed to fetch meals" message={error} />;
+    return (
+      <>
+        {console.log(`Meals.jsx error condition loadedMeals: ${loadedMeals}`)}
+        {console.log(`Meals.jsx error condition error: ${error}`)}
+        <Error title="Failed to fetch meals" message={error} />
+      </>
+    );
   }
 
   return (
     <>
+      {console.log(`Meals.jsx loadedMeals: ${loadedMeals}`)}
+      {console.log(`Meals.jsx error: ${error}`)}
+
       <div className="meal-filters">
         <button
           onClick={() => setFilter("all")}
