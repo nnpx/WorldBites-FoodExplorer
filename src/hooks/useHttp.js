@@ -1,11 +1,11 @@
 import { useCallback, useState, useEffect } from "react";
 
 async function sendHttpRequest(url, config) {
-  console.log(`useHttp.js sendHttpRequest url: ${url}`);
-  console.log(`useHttp.js sendHttpRequest config: ${config}`);
+  // console.log(`useHttp.js sendHttpRequest url: ${url}`);
+  // console.log(`useHttp.js sendHttpRequest config: ${config}`);
 
   const response = await fetch(url, config);
-  console.log(`useHttp.js sendHttpRequest response: ${response}`);
+  // console.log(`useHttp.js sendHttpRequest response: ${response}`);
 
   const resData = await response.json();
 
@@ -33,20 +33,20 @@ export default function useHttp(url, config, initialData) {
       setIsLoading(true);
       try {
         const resData = await sendHttpRequest(url, { ...config, body: data });
-        console.log(`useHttp.js resData: ${resData}`);
+        // console.log(`useHttp.js resData: ${resData}`);
 
         setData(resData);
       } catch (error) {
-        console.log(`useHttp.js Fetching URL: ${url}`);
+        console.log(`useHttp.js Fetching URL: `);
         console.log(url);
 
-        console.log(`useHttp.js config: ${config}`);
+        console.log(`useHttp.js config: `);
         console.log(config);
 
-        console.log(`useHttp.js data: ${data}`);
+        console.log(`useHttp.js data: `);
         console.log(data);
 
-        console.log(`useHttp.js error: ${error}`);
+        console.log(`useHttp.js error: `);
         console.log(error);
 
         setError(error.message || "Something went wrong");

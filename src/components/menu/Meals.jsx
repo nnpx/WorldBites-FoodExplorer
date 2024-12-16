@@ -30,8 +30,8 @@ export default function Meals() {
   if (error) {
     return (
       <>
-        {console.log(`Meals.jsx error condition loadedMeals: ${loadedMeals}`)}
-        {console.log(`Meals.jsx error condition error: ${error}`)}
+        {console.log(`Meals.jsx loadedMeals: ${loadedMeals}`)}
+        {console.log(`Meals.jsx error: ${error}`)}
         <Error title="Failed to fetch meals" message={error} />
       </>
     );

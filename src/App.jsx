@@ -38,7 +38,6 @@ function App() {
               <MealSection />
               <TestimonialsSection />
               <PricingSection />
-              <MenuSection />
             </>
           }
         />
