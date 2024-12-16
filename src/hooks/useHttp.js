@@ -1,6 +1,9 @@
 import { useCallback, useState, useEffect } from "react";
 
 async function sendHttpRequest(url, config) {
+  console.log(`useHttp.js sendHttpRequest url: ${url}`);
+  console.log(`useHttp.js sendHttpRequest config: ${config}`);
+
   const response = await fetch(url, config);
   console.log(`useHttp.js sendHttpRequest response: ${response}`);
 
@@ -34,6 +37,9 @@ export default function useHttp(url, config, initialData) {
 
         setData(resData);
       } catch (error) {
+        console.log(`useHttp.js Fetching URL: ${url}`);
+        console.log(`useHttp.js config: ${config}`);
+        console.log(`useHttp.js data: ${data}`);
         console.log(`useHttp.js error: ${error}`);
 
         setError(error.message || "Something went wrong");
