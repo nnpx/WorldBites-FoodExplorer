@@ -30,7 +30,7 @@ function App() {
             </>
           }
         />
-        <Route path="/meals" element={<MenuSection />} />
+        <Route path="/menu" element={<MenuSection />} />
       </Routes>
       <Footer />
     </Router>
