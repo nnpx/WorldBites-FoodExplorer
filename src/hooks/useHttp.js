@@ -38,9 +38,16 @@ export default function useHttp(url, config, initialData) {
         setData(resData);
       } catch (error) {
         console.log(`useHttp.js Fetching URL: ${url}`);
+        console.log(url);
+
         console.log(`useHttp.js config: ${config}`);
+        console.log(config);
+
         console.log(`useHttp.js data: ${data}`);
+        console.log(data);
+
         console.log(`useHttp.js error: ${error}`);
+        console.log(error);
 
         setError(error.message || "Something went wrong");
       }

@@ -40,7 +40,8 @@ export default function Meals() {
   return (
     <>
       {console.log(`Meals.jsx loadedMeals: ${loadedMeals}`)}
-      {console.log(`Meals.jsx error: ${error}`)}
+      {console.log(`Meals.jsx error:`)}
+      {console.log(error)}
 
       <div className="meal-filters">
         <button
