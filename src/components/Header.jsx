@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import omnifoodLogo from "../img/omnifoodLogo.png";
@@ -14,7 +14,7 @@ export default function Header() {
     headerEl.classList.toggle("nav-open");
   };
 
-  const location = useLocation();
+  // const location = useLocation();
   const isHomePage = location.pathname === "/";
 
   const dispatch = useDispatch();
